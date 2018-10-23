@@ -1,18 +1,12 @@
 #include <stdio.h>
 
 
-void progname()
-{
-	printf("\n");
-	printf("DANIYAL ABBASI\n");
-	printf("17BCS069\n");
-	printf("CS SEM 3\n");
-}
+
 
 
 void fac()
 {
-	//system("clear");
+	system("clear");
 	int num;
 
 	printf("Enter number - ")	;
@@ -35,7 +29,7 @@ void fac()
 
 void sumser()
 {
-	//system("clear");
+	system("clear");
 	int n;
 	printf("Enter a number - ");
 	scanf("%d", &n);
@@ -73,7 +67,7 @@ void sumser()
 
 void fibo()
 {
-	//system("clear");
+	system("clear");
 	int n;
 
 	printf("Enter Number - ");
@@ -101,7 +95,7 @@ void fibo()
 
 void sumdig()
 {
-	//system("clear");
+	system("clear");
 
 	int n;
 	printf("Enter Number - \n");
@@ -139,7 +133,7 @@ int main(int argc, char const *argv[])
 
 	int n;
 	
-	//system("clear");	
+	system("clear");	
 
 	do
 	{
@@ -165,7 +159,7 @@ int main(int argc, char const *argv[])
 	}while(n!=5);
 
 
-	progname();
+	
 	return 0;
 }
 
