@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 void progname()
 {
 	printf("\n");
@@ -6,19 +7,12 @@ void progname()
 	printf("17BCS069\n");
 	printf("CS SEM 3\n");
 }
-
 int main(int argc, char const *argv[])
 {
-	char *a=(char*)malloc(sizeof(char)*100);
-
-	printf("Enter a string - \n"); gets(a);
-
+	char a[100];
+	printf("Enter a string - "); 
+	scanf("%s",a);
 	int i,j;
-
-
-
-
-
 	for (i = 0; a[i]!=NULL ; ++i)
 	{
 		if(a[i]==a[i+1])
@@ -28,13 +22,9 @@ int main(int argc, char const *argv[])
 				a[j]=a[j+1];
 			}
 			i--;
-
 		}
-		//printf("\n Loop run %i \n", i );
 	}
-
 	printf("\n\n String - %s\n", a);
-
 	progname();
 	return 0;
 }
